@@ -296,7 +296,7 @@ export default function App() {
             </div>
             <div>
               <h1 className="font-display text-xl sm:text-2xl font-extrabold tracking-tight">J&T LALAN</h1>
-              <p className="text-xs opacity-90 font-medium">Broadcast Manager • Gerai Aini</p>
+              <p className="text-xs opacity-90 font-medium">Broadcast Manager • Grai Aini</p>
             </div>
           </div>
           
