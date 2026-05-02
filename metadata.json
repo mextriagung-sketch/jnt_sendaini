@@ -1,0 +1,6 @@
+{
+  "name": "J&T Lalan Broadcast",
+  "description": "Aplikasi manajemen pengiriman pesan resi J&T Lalan Gerai Aini untuk notifikasi paket via WhatsApp.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": []
+}

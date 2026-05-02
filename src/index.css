@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  
+  --color-jt-red: #E31E24;
+  --color-jt-dark: #B3151A;
+  --color-jt-light: #FEEEEE;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans;
+  }
+}
+
+.jt-gradient {
+  background: linear-gradient(135deg, var(--color-jt-red) 0%, var(--color-jt-dark) 100%);
+}
