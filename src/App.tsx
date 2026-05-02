@@ -456,7 +456,7 @@ export default function App() {
                 <MessageSquare size={16} /> Template Pesan
               </h3>
               <p className="opacity-70 italic leading-relaxed">
-                "hallo kami dari jnt lalan grai aini paket ada telah samapi dengan nomer resi adalah <span className="font-bold text-jt-red">[NOMER RESI]</span>"
+                "hallo kami dari jnt lalan grai aini paket ada telah sampi dengan nomer resi adalah <span className="font-bold text-jt-red">[NOMER RESI]</span>"
               </p>
             </div>
           </aside>
