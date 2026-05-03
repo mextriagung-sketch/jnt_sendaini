@@ -221,6 +221,8 @@ export default function App() {
   };
 
   const openScanner = (id: string) => {
+    // Otomatis hapus resi lama saat mulai scan baru agar tidak membingungkan
+    updateResi(id, ''); 
     setActiveScanId(id);
     setIsScannerOpen(true);
   };
@@ -296,7 +298,7 @@ export default function App() {
             </div>
             <div>
               <h1 className="font-display text-xl sm:text-2xl font-extrabold tracking-tight">J&T LALAN</h1>
-              <p className="text-xs opacity-90 font-medium">Broadcast Manager • Grai Aini</p>
+              <p className="text-xs opacity-90 font-medium">Broadcast Manager • Gerai Aini</p>
             </div>
           </div>
           
@@ -456,7 +458,7 @@ export default function App() {
                 <MessageSquare size={16} /> Template Pesan
               </h3>
               <p className="opacity-70 italic leading-relaxed">
-                "hallo kami dari jnt lalan grai aini paket ada telah sampai dengan nomer resi adalah <span className="font-bold text-jt-red">[NOMER RESI]</span>"
+                "hallo kami dari jnt lalan grai aini paket ada telah samapi dengan nomer resi adalah <span className="font-bold text-jt-red">[NOMER RESI]</span>"
               </p>
             </div>
           </aside>
@@ -552,6 +554,7 @@ export default function App() {
                                 type="text" 
                                 value={contact.resi}
                                 onChange={(e) => updateResi(contact.id, e.target.value)}
+                                onFocus={(e) => e.target.select()}
                                 placeholder="Input resi..."
                                 className={`w-full pl-4 pr-12 py-2.5 rounded-xl border transition-all text-sm font-mono font-bold tracking-wider ${isDarkMode ? 'bg-slate-700 border-slate-600' : 'bg-slate-50 border-slate-200 focus:border-jt-red focus:bg-white'}`}
                               />

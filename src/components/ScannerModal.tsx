@@ -47,6 +47,14 @@ export default function ScannerModal({ isOpen, onClose, onScan }: ScannerModalPr
           config,
           (decodedText) => {
             if (decodedText) {
+              // Play beep sound
+              try {
+                const audio = new Audio("https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3");
+                audio.play();
+              } catch (e) {
+                console.error("Audio play failed", e);
+              }
+
               onScan(decodedText);
               stopScanner();
               onClose();
